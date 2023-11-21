@@ -22,8 +22,8 @@ export default function MovieCredits({ movie }) {
 
     return (
         <>
-            <TableContainer component={Paper} sx={{ marginBottom: '5px' }}>
-                <Table sx={{ minWidth: 550 }} aria-label="Cast Table">
+            <TableContainer component={Paper} sx={{ marginBottom: '10px', overflowX: 'auto' }}>
+                <Table sx={{ minWidth: 550}} aria-label="Cast Table">
                     <TableHead>
                         <TableRow>
                             <TableCell >Character</TableCell>
@@ -44,7 +44,7 @@ export default function MovieCredits({ movie }) {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <TableContainer component={Paper} sx={{ marginBottom: '5px' }}>
+            <TableContainer component={Paper} sx={{ marginBottom: '5px', overflowX: 'auto' }}>
                 <Table sx={{ minWidth: 550 }} aria-label="Crew Table">
                     <TableHead>
                         <TableRow>
