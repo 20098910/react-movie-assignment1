@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { red } from "@mui/material/colors";
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
@@ -43,8 +44,9 @@ const SiteHeader = ({ history }) => {
   return (
     <>
       <AppBar position="fixed" color="secondary">
-        <Toolbar>
-          <Typography variant="h4" sx={{ flexGrow: 1 }}>
+        <Toolbar sx={{backgroundColor:'red'}}>
+          
+          <Typography variant="h4" sx={{ flexGrow: 1}}>
             TMDB Client
           </Typography>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
