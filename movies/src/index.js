@@ -40,7 +40,6 @@ const App = () => {
             <Route path="/movies/topRated" element={ <TopRatedPage /> } />
             <Route path="/movies/nowPlaying" element={ <NowPlayingPage /> } />
             <Route path="/movies/popular" element={ <PopularPage /> } />
-            <Route path="/movies/recommended" element={ <RecommendedPage /> } />
             <Route path="/credits/:id" element={ <MovieCreditsPage /> } />
             <Route path="/reviews/:id" element={<MovieReviewPage />} />
             <Route path="/movies/:id" element={<MoviePage />} />

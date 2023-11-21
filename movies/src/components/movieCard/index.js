@@ -50,12 +50,13 @@ export default function MovieCard({ movie, action }) {
         }
       />
       <CardMedia
-        sx={{ height: 500 }}
+        sx={{ height: 500 ,boxShadow: '10px'}}
         image={
           movie.poster_path
             ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
             : img
         }
+        
       />
       <CardContent>
         <Grid container>

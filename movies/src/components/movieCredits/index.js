@@ -44,7 +44,7 @@ export default function MovieCredits({ movie }) {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <TableContainer>
+            <TableContainer component={Paper} sx={{ marginBottom: '5px' }}>
                 <Table sx={{ minWidth: 550 }} aria-label="Crew Table">
                     <TableHead>
                         <TableRow>

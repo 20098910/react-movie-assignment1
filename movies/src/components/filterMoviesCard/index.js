@@ -53,7 +53,7 @@ export default function FilterMoviesCard(props) {
     <Card
       sx={{
         maxWidth: 345,
-        backgroundColor: "rgb(204, 204, 0)"
+        backgroundColor: 'red'
       }}
       variant="outlined">
       <CardContent>
@@ -91,7 +91,7 @@ export default function FilterMoviesCard(props) {
       </CardContent>
       <CardMedia
         sx={{ height: 300 }}
-        image={img}
+        image= {"https://c8.alamy.com/comp/E09BR1/a-nighttime-exposure-in-front-of-an-illuminated-movie-theater-marquee-E09BR1.jpg"}
         title="Filter"
       />
       <CardContent>

@@ -37,7 +37,7 @@ const MovieDetails = ({ movie }) => {
 
       <Paper
         component="ul"
-        sx={{ ...root }}
+        sx={{ ...root , backgroundColor:'lightgray'}}
       >
         <li>
           <Chip label="Genres" sx={{ ...chip }} color="primary" />
@@ -48,7 +48,7 @@ const MovieDetails = ({ movie }) => {
           </li>
         ))}
       </Paper>
-      <Paper component="ul" sx={{ ...root }}>
+      <Paper component="ul" sx={{ ...root, backgroundColor:'lightgray'}}>
         <Chip icon={<AccessTimeIcon />} label={`${movie.runtime} min.`} />
         <Chip
           icon={<MonetizationIcon />}
@@ -62,7 +62,7 @@ const MovieDetails = ({ movie }) => {
       </Paper>
 
 
-      <Paper component="ul" sx={{ ...root }}>
+      <Paper component="ul" sx={{ ...root, backgroundColor:'lightgray' }}>
         <li>
           <Chip label={'Production Countries'} color="primary" />
         </li>
@@ -75,7 +75,7 @@ const MovieDetails = ({ movie }) => {
       </Paper>
 
           
-      <Paper component="ul" sx={{ ...root }}>
+      <Paper component="ul" sx={{ ...root, backgroundColor:'lightgray' }}>
         <MovieCredits movie={movie} />
       </Paper>
       
@@ -89,7 +89,8 @@ const MovieDetails = ({ movie }) => {
         sx={{
           position: 'fixed',
           bottom: '1em',
-          right: '1em'
+          right: '1em',
+          backgroundColor:'red'
         }}
       >
         <NavigationIcon />
