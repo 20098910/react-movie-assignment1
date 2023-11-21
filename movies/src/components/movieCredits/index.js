@@ -49,12 +49,14 @@ export default function MovieCredits({ movie }) {
                     <TableHead>
                         <TableRow>
                             <TableCell align="center">Crew Member</TableCell>
+                            <TableCell align="center">Department</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {credits?.crew?.map((c) => (
                             <TableRow key={c.id}>
                                 <TableCell >{excerpt(c.name)}</TableCell>
+                                <TableCell >{excerpt(c.department)}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
